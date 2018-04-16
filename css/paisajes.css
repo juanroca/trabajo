@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url(DancingScript-Regular.ttf);
+}
+
+body{
+  background: #02010a;
+  font-family: 'Dancing Script';
+}
+/*cabecera*/
+#cabecera {
+  border-radius: 10px 10px 0px 0px;
+	background: #5b7989;
+  display: flex;
+}
+
+#cabecera div {
+  width: 50%;
+}
+
+#cabecera div h1 {
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+.menu  a{
+  color: white;
+}
+	.menu  ul {
+		width: auto;
+
+  }
+
+	.menu  li {
+		display: inline;
+    text-align: right;
+    float: right;
+    padding: 15px;
+    vertical-align: middle;
+  }
+
+#cabecera div a{
+  text-decoration: none;
+}
+
+/*contenedor*/
+#contenedor {
+	margin: 0 auto;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+  background: linear-gradient(#82c3a6, #d5c75f);
+  }
+
+#contenedor [class*="imagen"]{
+  width: 33.33%;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+#contenedor [class*="imagen"] img{
+  box-shadow: 2px 2px #02010a;
+}
+
+.imagen1{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+
+.imagen2{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.imagen4{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.imagen6{
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.imagen3{
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+
+/*pie de página*/
+footer{
+  display: flex;
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer div{
+  width: 25%;
+  padding: 8px;
+}
+/*efecto animación slidein*/
+header{
+  animation-name: slidein;
+  animation-duration: 1s;
+  }
+  @keyframes slidein {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+  }
+/*diseño para celular*/
+@media (max-width:900px) {
+  #cabecera {
+    border-radius: 10px 10px 0px 0px;
+  	background: #5b7989;
+    display: block;
+  }
+
+  #cabecera div {
+    width: 100%;
+  }
+
+  #cabecera div h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+  }
+
+  .menu  a{
+    color: white;
+    text-align: center;
+  }
+  	.menu  ul {
+  		width: auto;
+      text-align: center;
+    }
+
+  	.menu  li {
+  		text-align: center;
+      padding: 8px;
+      float: none;
+      display: block;
+    }
+
+    #contenedor {
+    	margin: 0 auto;
+      width: 100%;
+    	display: block;
+    	flex-flow: row wrap;
+    }
+
+    #contenedor [class*="imagen"]{
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+    footer{
+      display: block;
+      background: #C6d5c5;
+      border-radius: 0px 0px 10px 10px;
+      padding-left: 15px;
+
+    }
+}
