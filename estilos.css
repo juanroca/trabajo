@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url(DancingScript-Regular.ttf);
+}
+
+body{
+  background: #02010a;
+  font-family: 'Dancing Script';
+}
+/*header*/
+#cabecera {
+  border-radius: 10px 10px 0px 0px;
+	background: #5b7989;
+  display: flex;
+}
+
+#cabecera div {
+  width: 50%;
+}
+
+#cabecera div h1 {
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+.menu  a{
+  color: white;
+}
+	.menu  ul {
+		width: auto;
+
+  }
+
+	.menu  li {
+		display: inline;
+    text-align: right;
+    float: right;
+    padding: 15px;
+    vertical-align: middle;
+  }
+
+#cabecera div a{
+  text-decoration: none;
+}
+/*contenedor*/
+#contenedor {
+	margin: 0 auto;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+#contenedor div{
+  padding: 10px 0px 10px 0px;
+}
+.imagen1{
+  width: 100%;
+  background: #82c3a6;
+  text-align: center;
+}
+
+.imagen2{
+  width: 50%;
+  background: #d5c75f;
+  text-align: center;
+  border: 1px;
+}
+
+.imagen3{
+  width: 50%;
+  background: #d5c75f;
+  text-align: center;
+  border: 1px;
+}
+
+#contenedor [class*="imagen"] img{
+  box-shadow: 2px 2px #02010a;
+  vertical-align: middle;
+}
+
+#contenedor .imagen2 img:hover{
+		transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+}
+
+#contenedor .imagen3 img:hover{
+		transform: translate(20px, -5px);
+    box-shadow: 2px 2px #82c3a6;
+}
+/*efecto animación slidein*/
+header{
+  animation-name: slidein;
+  animation-duration: 1s;
+  }
+  @keyframes slidein {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+  }
+/*diseño para celular*/
+@media (max-width:900px) {
+  #cabecera {
+    border-radius: 10px 10px 0px 0px;
+  	background: #5b7989;
+    display: block;
+  }
+
+  #cabecera div {
+    width: 100%;
+  }
+
+  #cabecera div h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #02010a;
+  }
+
+  .menu  a{
+    color: white;
+    text-align: center;
+  }
+  	.menu  ul {
+  		width: auto;
+      text-align: center;
+    }
+
+  	.menu  li {
+  		text-align: center;
+      padding: 8px;
+      float: none;
+      display: block;
+    }
+
+    #contenedor {
+    	margin: 0 auto;
+      width: 100%;
+    	display: block;
+    	flex-flow: row wrap;
+    }
+
+    .imagen1{
+      width: 100%;
+      background: #82c3a6;
+      text-align: center;
+    }
+
+    .imagen2{
+      width: 100%;
+      background: #d5c75f;
+      text-align: center;
+      border: 1px;
+    }
+
+    .imagen3{
+      width: 100%;
+      background: #d5c75f;
+      text-align: center;
+      border: 1px;
+    }
+
+
+}
+footer{
+  display: flex;
+  background: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+}
+
+footer div{
+  width: 25%;
+  padding: 8px;
+}
